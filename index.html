@@ -1,20 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
+    <title>Guessing Game</title>
     <script defer src="script.js" ></script>
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
 <body>
-    <form action="">
-        <label for="guess">Enter a guess</label>
-        <input type="text" id="guess">
-        <button type="button" class="guessSubmit">Submit Guess</button>
+    <h1 id="Header">Guessing Game</h1>
+    <p id="rules">Try to guess a random number between 1 and 100 in 10 tries</p>
+    <form>
+        <label for="guessField">Enter a guess:</label>
+        <input type="number" min="1" max="100" id="guessField">
+        <button type="button" id="submitButton">Submit Guess</button>
     </form>
-    <p class="previousGuesses"></p>
-    <p class="result"></p>
-    <p class="highOrLow"></p>
-
+    <div class="resultText">
+        <p class="previousGuesses"></p>
+        <p class="result"></p>
+        <p class="highOrLow"></p>
+    </div>
 </body>
 </html>
+
