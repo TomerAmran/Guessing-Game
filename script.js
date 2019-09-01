@@ -64,7 +64,7 @@ function highOrLowChecker(userGuess) {
         resetButton = document.createElement('button');
         resetButton.textContent = "start new game";
         document.body.appendChild(resetButton);
-        resetButton.addEventListener('click ', resetGame);
+        resetButton.addEventListener('click', resetGame);
     }
 
     function resetGame() {
